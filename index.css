@@ -111,7 +111,6 @@ p {
 }
 
 .header-container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -156,8 +155,8 @@ p {
 
 .search-container {
   display: flex;
+  justify-content: center;
   margin: 30px 50px;
-  max-width: 500px;
 }
 
 input {
@@ -174,15 +173,16 @@ input {
     width: 100%;
     font-size: 24px;
     padding-left: 25px;
+    width: 500px;
 }
 
 .loading {
     background-color: #0a1f44;
-    padding: 20px;
+    padding: 5px;
 }
 
 button {
-    width: 200px;
+  cursor: pointer;
     margin-left: 20px;
     font-size: 20px;
     color: #fff;
