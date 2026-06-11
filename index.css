@@ -12,6 +12,12 @@ body {
   max-width: 1200px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 p {
   font-size: 14px;
   word-break: break-word;
@@ -32,6 +38,8 @@ p {
 }
 
 .user-card {
+  width: 250px;
+  display: flex;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 10px;
@@ -188,4 +196,11 @@ button {
     color: #fff;
     border-radius: 20px;
     transition: all .25s ease;
+}
+
+.poster {
+  width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
