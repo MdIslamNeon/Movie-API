@@ -22,12 +22,19 @@
         </div>
     </header>
 
-    <div class="search-container">
-        <input class="search-input" type="text" placeholder="Search by Name or ID">
-        <button class="loading"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-    
     <div class="container">
+    <div class="search-container">
+      <div class="search-container__input">
+        <input class="search-input" type="text" placeholder="Search by Name">
+        <button class="loading"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <select id="filter" onchange="filterMovies(event)">
+          <option value="" disabled selected>Sort</option>
+          <option value="OLD_TO_NEW">Year, Old to New</option>
+          <option value="NEW_TO_OLD">Year, New to Old</option>
+      </select>
+    </div>
+
     <div class="row">
       <div class="user-list">
         <div class="user">
